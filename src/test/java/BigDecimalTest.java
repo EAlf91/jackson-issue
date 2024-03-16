@@ -17,7 +17,6 @@ public class BigDecimalTest {
     public void shouldDeserializeBigDecimalFromJacksonCore() {
 
         BigDecimal actualFromJacksonCore = NumberInput.parseBigDecimal(".05", true);
-
         assertEquals(expected, actualFromJacksonCore);
     }
 
@@ -27,7 +26,6 @@ public class BigDecimalTest {
         BigDecimal actualFromJacksonDataBind = mapper.readValue("""
                                                                         {"value":".05"}
                                                                         """, TestDTO.class).getValue();
-
         assertEquals(expected, actualFromJacksonDataBind);
     }
 
