@@ -14,7 +14,7 @@ public class BigDecimalTest {
     BigDecimal expected = BigDecimal.valueOf(0.05);
 
     @Test
-    public void shouldDeserializeBigDecimalFromJacksonCore() throws JsonProcessingException {
+    public void shouldDeserializeBigDecimalFromJacksonCore() {
 
         BigDecimal actualFromJacksonCore = NumberInput.parseBigDecimal(".05", true);
 
